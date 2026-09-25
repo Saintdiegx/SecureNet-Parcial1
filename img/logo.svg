@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="220" height="60" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">SecureNet</title>
+  <g transform="translate(4,6)">
+    <path d="M24 2 L46 10 V26 C46 40 36 47 24 52 C12 47 2 40 2 26 V10 Z"
+          fill="none" stroke="#2DD4BF" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M24 2 L46 10 V26 C46 40 36 47 24 52 Z" fill="#2DD4BF" opacity="0.12"/>
+    <path d="M13 26 L21 34 L37 16" fill="none" stroke="#F5A623" stroke-width="3.4"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="62" y="27" font-family="Manrope, sans-serif" font-weight="800" font-size="21" fill="#E8EDF2">Secure</text>
+  <text x="62" y="27" font-family="Manrope, sans-serif" font-weight="800" font-size="21" fill="#2DD4BF" dx="65">Net</text>
+  <text x="62" y="43" font-family="Manrope, sans-serif" font-weight="500" font-size="10.5" letter-spacing="0.5" fill="#93A4B8">Ciberseguridad para pymes</text>
+</svg>

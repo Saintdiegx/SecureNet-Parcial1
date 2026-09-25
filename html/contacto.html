@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — SecureNet</title>
+<meta name="description" content="Solicita una evaluación gratuita de ciberseguridad para tu pyme. Escríbenos y te contactamos en menos de 24 horas.">
+<link rel="icon" href="../img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo-link"><img src="../img/logo.svg" alt="SecureNet"></a>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+        <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        <li><a href="contacto.html" class="nav-cta">Evaluación gratuita</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Inicio</a> / Contacto</p>
+      <span class="badge"><span class="dot"></span> Hablemos</span>
+      <h1>Cuéntanos sobre tu empresa y te armamos un plan</h1>
+      <p class="lead">Completa el formulario y uno de nuestros analistas te contactará en menos de 24 horas con una evaluación gratuita de tu situación actual.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container contact-grid">
+      <!-- INFO -->
+      <aside>
+        <div class="contact-info-item">
+          <svg class="ic"><use href="../img/icons.svg#icon-mail"></use></svg>
+          <div>
+            <h4>Correo</h4>
+            <p>contacto@securenet.pa</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <svg class="ic"><use href="../img/icons.svg#icon-alert"></use></svg>
+          <div>
+            <h4>Línea de incidentes 24/7</h4>
+            <p>+507 6000-0000 (clientes activos)</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <svg class="ic"><use href="../img/icons.svg#icon-shield"></use></svg>
+          <div>
+            <h4>Oficina</h4>
+            <p>Ciudad de Panamá, Panamá</p>
+          </div>
+        </div>
+
+        <h4 style="margin-top:34px;margin-bottom:14px;font-size:0.95rem">Recursos externos</h4>
+        <ul class="link-list">
+          <li>
+            <a href="https://www.cert.gob.pa/" target="_blank" rel="noopener">
+              CSIRT Panamá<br><small>Centro de respuesta a incidentes del gobierno</small>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.incibe.es/" target="_blank" rel="noopener">
+              INCIBE<br><small>Instituto Nacional de Ciberseguridad (España)</small>
+            </a>
+          </li>
+        </ul>
+
+        <div class="social-row" style="margin-top:24px">
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">fb</a>
+        </div>
+      </aside>
+
+      <!-- FORMULARIO -->
+      <div class="card">
+        <form id="contactForm" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="nombre">Nombre completo *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana Torres" required>
+              <span class="error-msg"></span>
+            </div>
+            <div class="field">
+              <label for="empresa">Empresa *</label>
+              <input type="text" id="empresa" name="empresa" placeholder="Ej. Distribuidora Torres" required>
+              <span class="error-msg"></span>
+            </div>
+            <div class="field">
+              <label for="email">Correo electrónico *</label>
+              <input type="email" id="email" name="email" placeholder="ana@empresa.com" required>
+              <span class="error-msg"></span>
+            </div>
+            <div class="field">
+              <label for="telefono">Teléfono *</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="6000-0000" required>
+              <span class="error-msg"></span>
+            </div>
+            <div class="field full">
+              <label for="empleados">Tamaño de la empresa *</label>
+              <select id="empleados" name="empleados" required>
+                <option value="">Selecciona una opción</option>
+                <option value="1-10">1 a 10 empleados</option>
+                <option value="11-50">11 a 50 empleados</option>
+                <option value="51-200">51 a 200 empleados</option>
+                <option value="200+">Más de 200 empleados</option>
+              </select>
+              <span class="error-msg"></span>
+            </div>
+            <div class="field full">
+              <label for="mensaje">Cuéntanos qué necesitas *</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Ej. Queremos capacitar a nuestro equipo y revisar el respaldo de nuestros archivos..."></textarea>
+              <span class="error-msg"></span>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top:10px">Enviar solicitud</button>
+          <p class="form-note">Al enviar aceptas que te contactemos por correo o teléfono sobre tu solicitud. Tus datos se guardan de forma local para esta demostración académica.</p>
+          <div id="formStatus" class="form-status" role="status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISTA DE DATOS GUARDADOS -->
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head">
+        <span class="badge"><span class="dot"></span> Panel de solicitudes</span>
+        <h2>Solicitudes recibidas</h2>
+        <p>Vista de referencia de los datos guardados por el formulario (almacenados en este navegador). Puedes exportarlos como archivo de datos.</p>
+      </div>
+      <div class="table-wrap">
+        <table class="subs" id="subsTable">
+          <thead>
+            <tr><th>Fecha</th><th>Nombre</th><th>Empresa</th><th>Correo</th><th>Teléfono</th><th>Tamaño</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p id="subsEmpty" class="form-note" style="display:none">Aún no hay solicitudes registradas. Completa el formulario para ver un registro aquí.</p>
+      <button id="exportData" class="btn btn-outline" style="margin-top:18px">Exportar datos (.json)</button>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <img src="../img/logo.svg" alt="SecureNet" style="height:34px;margin-bottom:14px">
+        <p>Ciberseguridad gestionada para pequeñas y medianas empresas en Panamá.</p>
+        <div class="social-row">
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">fb</a>
+          <a href="https://x.com" target="_blank" rel="noopener" aria-label="X">x</a>
+        </div>
+      </div>
+      <div>
+        <h4>Sitio</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="index.html#servicios">Filtrado de phishing</a></li>
+          <li><a href="index.html#servicios">Monitoreo 24/7</a></li>
+          <li><a href="index.html#servicios">Respaldo y recuperación</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Recursos externos</h4>
+        <ul>
+          <li><a href="https://www.cert.gob.pa/" target="_blank" rel="noopener">CSIRT Panamá</a></li>
+          <li><a href="https://www.incibe.es/" target="_blank" rel="noopener">INCIBE</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 SecureNet. Proyecto académico — UTP, Ingeniería Web.</span>
+      <span>Guillén &amp; Cedeño — Grupo 1SF134</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
